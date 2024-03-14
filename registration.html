@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- bootstrap link -->
+    <link href="bootstrap\bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- External JavaScript -->
+    <link rel="stylesheet" href="js/custom.js">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <!-- Required scripts for Bootstrap 5 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand border-0" href="#">
+                <img src="images/tuf-logo.png" alt="" width="150" height="85" class="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+                aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-center" id="navbar1">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                    <li class="nav-item me-5 ">
+                        <button type="button" id="nav-button"
+                            class="btn rounded-pill btn-outline-danger justify-content-center"><i
+                                class="far fa-play-circle pe-2"></i>How to apply</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><u> Why TUF?</u></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Visit Site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends here -->
+
+    <!-- Section 1 -->
+    <div id="registration-bg-color">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10">
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <h2 class="text-light text-uppercase text-center">Register As a new Applicant</h2>
+                        </div>
+                    </div>
+                    <form class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-sm-10">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2 position-relative">
+                                        <label for="" class="form-label text-light">*Full Name</label>
+                                        <input type='text' value=''
+                                            class='form-control icon-input rounded-pill border-0'><i
+                                            class='fas fa-user input-field-icon' aria-hidden='true'></i>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2 position-relative">
+                                        <label for="" class="form-label text-light">*Email</label>
+                                        <input type='email' value=''
+                                            class='form-control icon-input rounded-pill border-0'><i
+                                            class='fas fa-envelope input-field-icon' aria-hidden='true'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-sm-10 ">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2">
+                                        <label for="" class="form-label text-light">*Select Gender</label>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <input type="radio" class="btn-check" name="options" id="option1"
+                                                    autocomplete="off">
+                                                <label class="btn btn-light rounded-pill d-block"
+                                                    for="option1">Male</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" class="btn-check" name="options" id="option2"
+                                                    autocomplete="off">
+                                                <label class="btn btn-light rounded-pill d-block"
+                                                    for="option2">Female</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" class="btn-check" name="options" id="option3"
+                                                    autocomplete="off">
+                                                <label class="btn btn-light rounded-pill d-block"
+                                                    for="option3">Others</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2">
+                                        <label for="" class="form-label text-light">*Intrested Degree</label>
+                                        <select class="form-select rounded-pill border-0"
+                                            aria-label="Default select example">
+                                            <option selected>Select your intrest</option>
+                                            <option value="1">BSCS</option>
+                                            <option value="2">BSSE</option>
+                                            <option value="3">BSIT</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-sm-10 ">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2 position-relative">
+                                        <label for="" class="form-label text-light">*CNIC</label>
+                                        <input type='text' value=''
+                                            class='form-control icon-input rounded-pill border-0'><i
+                                            class='fas fa-id-card input-field-icon' aria-hidden='true'></i>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2 position-relative">
+                                        <label for="" class="form-label text-light">*Mobile</label>
+                                        <input type='text' value=''
+                                            class='form-control icon-input rounded-pill border-0'><i
+                                            class='fas fa-mobile-alt input-field-icon' aria-hidden='true'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-sm-10 ">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2 position-relative">
+                                        <label for="" class="form-label text-light">*Password</label>
+                                        <input type='password' value=''
+                                            class='form-control icon-input rounded-pill border-0'><i
+                                            class='fas fa-eye input-field-icon' aria-hidden='true'></i>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 py-2 position-relative">
+                                        <label for="" class="form-label text-light">*Confirm Password</label>
+                                        <input type='password' value=''
+                                            class='form-control icon-input rounded-pill border-0'><i
+                                            class='fas fa-eye input-field-icon' aria-hidden='true'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="col-6 d-grid py-2">
+                                        <button type="button" class="btn rounded-pill btn-light">Register</button>
+                                    </div>
+                                    <div class="col-6 d-grid py-2"><button type="button" id="login-buttion"
+                                            class="btn rounded-pill btn-dark text-light d-block">Log in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Section 1 Ends here -->
+
+</body>
+
+</html>

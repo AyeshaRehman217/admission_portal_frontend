@@ -1,0 +1,330 @@
+/* index-page */
+#section-1-bg {
+    background-color: #E5E5E5;
+}
+
+.section-2-bg {
+    background-color: #AC3336;
+}
+
+.carousel-bg {
+    background-color: #AC3336;
+}
+
+.section-5-bg {
+    background-color: #AC3336;
+}
+
+#nav-btn-color {
+    background-color: #AC3336;
+    font-size: 15px;
+}
+
+.form-color {
+    background-color: #AC3336;
+    border-radius: 20px;
+}
+
+.index-bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/herobannerimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+@media (min-width: 1200px) {
+    .index-bg-img {
+        background-size: cover;
+    }
+}
+
+#vertical-line {
+    border-right: 1px solid #AC3336;
+}
+
+.circle-logo {
+    height: 14px;
+    width: 14px;
+}
+
+.carousel-image-size {
+    height: 80px;
+    width: 80px;
+}
+
+@media (max-width: 991.98px) {
+    .custom-border {
+        border: none !important;
+    }
+}
+
+.index-input-field-icon {
+    right: 30px;
+    position: absolute;
+    top: 42px;
+    color: #ABABAB;
+}
+
+/* index-page */
+
+
+/* start-application-page */
+#start-application-page-bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Group\ 304.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+    /* background-attachment: fixed; */
+}
+
+@media (min-width: 1200px) {
+    #start-application-page-bg-img {
+        background-size: cover;
+    }
+}
+
+#tuf-heading-size {
+    font-size: 60px;
+    font-weight: 400;
+    /* font-family: ''; */
+}
+
+#card-bg {
+    background-color: #AC3336;
+    border-radius: 20px;
+}
+
+#section-1-btn-color {
+    background-color: #AC3336;
+}
+
+#section-1-paragraph {
+    font-size: large;
+}
+
+@media (max-width: 576px) {
+    #section-1-paragraph {
+        font-size: medium;
+    }
+}
+
+/* start-application-page */
+
+
+/* edit-application-page */
+#edit-application-page-bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Group\ 304.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+    /* background-attachment: fixed; */
+}
+
+@media (min-width: 1200px) {
+    .img-size {
+        background-size: cover;
+    }
+}
+
+
+/* edit-application-page */
+
+.body {
+    font-family: "Roboto-Regular", sans-serif;
+}
+
+/* view-application-page */
+#view-application-section-1-bg-color {
+    background-color: #AC3336;
+}
+
+@media (max-width: 768px) {
+    .section-1-close-btn {
+        position: absolute;
+        align-items: flex-end;
+        right: 20px;
+        /* top: 10px; */
+        /* padding-bottom: 10px; */
+        /* margin-bottom: 20px; */
+        /* float: right;  */
+        /* right: 0; */
+        /* top: 50; */
+    }
+}
+
+#close-btn-bg {
+    background-color: #AC3336;
+    color: white;
+}
+
+#download-btn {
+    background-color: #AC3336;
+    border-color: #AC3336;
+    width: 130px;
+}
+
+/* view-application-page */
+
+/* registration-page */
+
+#nav-button {
+    border-color: #AC3336;
+    color: #AC3336;
+}
+
+#nav-button:hover {
+    background-color: #AC3336;
+    border-color: #AC3336;
+    color: #ffffff;
+}
+
+#registration-bg-color {
+    background-color: #AC3336;
+}
+
+#login-buttion {
+    background-color: black;
+}
+
+.input-field-icon {
+    right: 40px;
+    position: absolute;
+    top: 50px;
+    color: #ABABAB;
+}
+
+.icon-input {
+    padding-right: 60px !important;
+}
+
+/* registration-page */
+
+/* Application-process */
+#bg-color {
+    background-color: #AC3336;
+}
+
+
+/* .nav-link{
+    color: #AC3336;
+} */
+
+.application-input-field-icon {
+    right: 35px;
+    position: absolute;
+    top: 45px;
+    color: #ABABAB;
+}
+
+.icon-input {
+    padding-right: 60px !important;
+}
+
+.tab1-icon {
+    color: #ABABAB;
+    padding-right: 8px;
+}
+
+.icon-input {
+    padding-right: 60px !important;
+}
+
+.tab-1-image {
+    height: 100px;
+    width: 100px;
+}
+
+.tab-1-image-text {
+    font-size: 14px;
+}
+
+#application-form-tab1-btn {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-2-btn1 {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-2-btn2 {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-2-btn3 {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-3-btn1 {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-3-btn2 {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-3-btn3 {
+    background-color: #AC3336;
+    border: #AC3336;
+}
+
+#tab-3-btn4 {
+    background-color: #ABABAB;
+    border: #ABABAB;
+}
+
+.tab4-icon {
+    color: #ABABAB;
+    padding-right: 8px;
+}
+
+.tab-4-image-text {
+    font-size: 14px;
+}
+
+@media (min-width: 767.98px) {
+    #application-form-card {
+        border-radius: 30px;
+    }
+}
+
+.nav-tab-link {
+    background-color: #ffffff;
+    color: #ABABAB;
+}
+
+.nav-tabs .nav-tab-item .nav-tab-link.active i {
+    color: #AC3336;
+}
+
+.nav-tab-link:hover {
+    background-color: #ffffff;
+    color: #ABABAB;
+}
+
+.nav-tabs .nav-tab-item .nav-tab-link.active {
+    background-color: #ffffff;
+    color: #AC3336;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .nav-tabs>li {
+        display: block;
+        /* width: 100%; */
+    }
+}
+
+
+/* .tab-2-body{
+    height: 50vh;
+} */
+
+/* Application-process */

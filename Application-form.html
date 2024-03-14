@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- bootstrap link -->
+    <link href="bootstrap\bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"> -->
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script> -->
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand border-0" href="#">
+                <img src="images/tuf-logo.png" alt="" width="150" height="85" class="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+                aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-center" id="navbar1">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                    <li class="nav-item me-5 ">
+                        <button type="button" id="nav-button"
+                            class="btn rounded-pill btn-outline-danger justify-content-center"><i
+                                class="far fa-play-circle pe-2"></i>How to apply</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><u> Why TUF?</u></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Visit Site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends here -->
+
+    <!-- Section 1 -->
+    <div id="bg-color">
+        <div class="container p-lg-5 py-md-4 py-1 d-sm-flex flex-sm-column">
+            <!-- Card -->
+            <div class="card card-header-tabs" id="application-form-card">
+                <div class="card-body rounded">
+                    <ul class="nav nav-tabs navbar-collapse d-flex justify-content-around flex-sm-row" id="myTab"
+                        role="tablist">
+                        <li class="nav-item nav-tab-item" role="presentation">
+                            <a class="nav-link active nav-tab-link fs-6" id="personal-details-tab" data-bs-toggle="tab"
+                                href="#personal-details" role="tab" aria-controls="personal-details"
+                                aria-selected="true"><i class='fas fa-user tab1-icon' aria-hidden='true'></i>Personal
+                                Details</a>
+                        </li>
+                        <li class="nav-item nav-tab-item" role="presentation">
+                            <a class="nav-link nav-tab-link fs-6" id="degree-tab" data-bs-toggle="tab" href="#degree"
+                                role="tab" aria-controls="degree" aria-selected="false"><i
+                                    class="far fa-file-alt tab1-icon"></i>Choose Your Degree</a>
+                        </li>
+                        <li class="nav-item nav-tab-item" role="presentation">
+                            <a class="nav-link nav-tab-link fs-6" id="academic-tab" data-bs-toggle="tab"
+                                href="#academic" role="tab" aria-controls="academic" aria-selected="false"><i
+                                    class="fas fa-graduation-cap tab1-icon"></i></i>Academic Detail</a>
+                        </li>
+                        <li class="nav-item nav-tab-item" role="presentation">
+                            <a class="nav-link nav-tab-link fs-6" id="family-details-tab" data-bs-toggle="tab"
+                                href="#family-details" role="tab" aria-controls="family-details"
+                                aria-selected="false"><i class='fas fa-users tab1-icon' aria-hidden='true'></i>Family
+                                Detail</a>
+                        </li>
+                    </ul>
+                    <!-- Tabs navs Ends here-->
+
+                    <!-- tabs content -->
+                    <div class="tab-content" id="myTabContent">
+                        <!-- tab 1 content -->
+                        <div class="tab-pane fade show active" id="personal-details" role="tabpanel"
+                            aria-labelledby="personal-details-tab">
+                            <div class="container">
+                                <div class="row py-4">
+                                    <div class="col-lg-2 col-md-3 col-sm-12">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="images/Group 442.png" class="rounded-circle tab-1-image"
+                                                alt="example placeholder" />
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <input class="form-control d-none" type="file" id="formFile">
+                                            <label for="formFile" class="form-label tab-1-image-text">
+                                                <i class='fas fa-image tab1-icon' aria-hidden='true'></i>Upload
+                                                Image</label>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <img src="images/Group 70.png" class="" alt="example placeholder" />
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <input class="form-control d-none" type="file" id="formFile">
+                                            <label for="formFile" class="form-label tab-1-image-text"><i
+                                                    class='fas fa-upload tab1-icon' aria-hidden='true'></i>CNIC
+                                                Front</label>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <img src="images/Group 82.png" class="" alt="example placeholder" />
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <input class="form-control d-none" type="file" id="formFile">
+                                            <label for="formFile" class="form-label tab-1-image-text"><i
+                                                    class='fas fa-upload tab1-icon' aria-hidden='true'></i>CNIC
+                                                Back</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1 position-relative">
+                                                <label for="" class="form-label text-dark">*Full Name</label>
+                                                <input type="text" class="form-control rounded-pill icon-input" id=""><i
+                                                    class='fas fa-user application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1 position-relative">
+                                                <label for="" class="form-label text-dark icon-input">*Email</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-envelope application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1 position-relative">
+                                                <label for="" class="form-label text-dark">*Mobile</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-mobile-alt application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1 position-relative">
+                                                <label for="" class="form-label text-dark">*Landline</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-phone application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 py-1">
+                                                <div class="row">
+                                                    <label for="" class="form-label">*Select Gender</label>
+                                                    <div class="col-lg-4 col-sm-4 col-md-4 my-1">
+                                                        <input type="radio" class="btn-check" name="options"
+                                                            id="option1" autocomplete="off">
+                                                        <label class="btn btn-light border rounded-pill d-block"
+                                                            for="option1">Male</label>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-4 col-md-4 my-1">
+                                                        <input type="radio" class="btn-check" name="options"
+                                                            id="option2" autocomplete="off">
+                                                        <label class="btn btn-light border rounded-pill d-block"
+                                                            for="option2">Female</label>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-4 col-md-4 my-1">
+                                                        <input type="radio" class="btn-check" name="options"
+                                                            id="option3" autocomplete="off">
+                                                        <label class="btn btn-light border rounded-pill d-block"
+                                                            for="option3">Others</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 py-1">
+                                                <label for="" class="form-label">*Blood Group</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your Blood Group</option>
+                                                    <option value="1">A+</option>
+                                                    <option value="2">A-</option>
+                                                    <option value="3">AB+</option>
+                                                    <option value="4">AB-</option>
+                                                    <option value="5">B+</option>
+                                                    <option value="6">B-</option>
+                                                    <option value="7">O+</option>
+                                                    <option value="8">O-</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 py-1 position-relative">
+                                                <label for="" class="form-label text-dark">*Date of
+                                                    Birth</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-calendar-alt application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 py-1">
+                                                <div class="row">
+                                                    <label for="" class="form-label">*Martial Status</label>
+                                                    <div class="col-lg-4 col-sm-4 col-md-4 my-1">
+                                                        <input type="radio" class="btn-check" name="options"
+                                                            id="m-option1" autocomplete="off">
+                                                        <label class="btn btn-light border rounded-pill d-block"
+                                                            for="m-option1">Single</label>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-4 col-md-4 my-1">
+                                                        <input type="radio" class="btn-check" name="options"
+                                                            id="m-option2" autocomplete="off">
+                                                        <label class="btn btn-light border rounded-pill d-block"
+                                                            for="m-option2">Married</label>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-4 col-md-4 my-1">
+                                                        <input type="radio" class="btn-check" name="options"
+                                                            id="m-option3" autocomplete="off">
+                                                        <label class="btn btn-light border rounded-pill d-block"
+                                                            for="m-option3">Divorce</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1 position-relative">
+                                                <label for="" class="form-label text-dark">*CNIC</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-id-card application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*Religion</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your Religion</option>
+                                                    <option value="1">Islam</option>
+                                                    <option value="2">Christian</option>
+                                                    <option value="3">Hindu</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*Nationality</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your Nationality</option>
+                                                    <option value="1">Pakistan</option>
+                                                    <option value="2">Italy</option>
+                                                    <option value="3">UK</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*Country</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your Country</option>
+                                                    <option value="1">Pakistan</option>
+                                                    <option value="2">Italy</option>
+                                                    <option value="3">UK</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*State</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your State</option>
+                                                    <option value="1">Punjab</option>
+                                                    <option value="2">Sindh</option>
+                                                    <option value="3">KPK</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*City</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your City</option>
+                                                    <option value="1">Faisalabad</option>
+                                                    <option value="2">Lahore</option>
+                                                    <option value="3">Karachi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 py-1">
+                                                <label for="" class="form-label text-dark">*Address</label>
+                                                <input type="text" class="form-control rounded-pill" id="">
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-lg-6 col-md-9 col-sm-12 py-1">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-danger text-white"
+                                                            id="application-form-tab1-btn">Save
+                                                            & Continue</button>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-light border">Back</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-3 col-sm-12 py-1">
+                                                <button type="button"
+                                                    class="btn rounded-pill btn-light border float-right">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab 1 content Ends here -->
+
+                        <!-- tab 2 content -->
+                        <div class="tab-pane fade" id="degree" role="tabpanel" aria-labelledby="degree-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-10 pb-5">
+                                    <div class="row d-flex">
+                                        <div class="col">
+                                            <h2 class="fs-4 pt-4"><i class='far fa-file-alt pe-2'
+                                                    aria-hidden='true'></i>Choose Your Degree</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 align-items-center">
+                                        <div class="col-lg-12 col-sm-12 col-md-12 d-inline">
+                                            <button type="button" class="btn rounded-pill btn-danger text-white px-4"
+                                                id="tab-2-btn1">Note</button>
+                                            <span class="m-0 ml-3">You can select up to 3 degrees</span>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*Faculty</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Faculty</option>
+                                                    <option value="1">Faculty of Sciences</option>
+                                                    <option value="2">Faculty of Information Technology</option>
+                                                    <option value="3">Faculty of Law</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <div><label for="" class="form-label">*Degree</label>
+                                                    <select class="form-select rounded-pill"
+                                                        aria-label="Default select example">
+                                                        <option selected>Select Your Degree</option>
+                                                        <option value="1">Computer Science</option>
+                                                        <option value="2">Software Engineering</option>
+                                                        <option value="3">Law</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
+                                                <button type="button" class="btn rounded-pill btn-danger"
+                                                    id="tab-2-btn2"><i class='fas fa-plus-circle pe-2'
+                                                        aria-hidden='true'></i>Apply
+                                                    for
+                                                    Degree</button>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-lg-6 col-md-9 col-sm-12 py-1">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-danger text-white"
+                                                            id="tab-2-btn2">Save
+                                                            & Continue</button>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-light border">Back</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-3 col-sm-12 py-1">
+                                                <button type="button"
+                                                    class="btn rounded-pill btn-light border float-right">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab 2 content Ends here -->
+
+                        <!-- tab 3 content -->
+                        <div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="academic-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-10 pb-5">
+                                    <div class="row d-flex">
+                                        <div class="col">
+                                            <h2 class="fs-4 pt-4"><i class='fas fa-graduation-cap pe-2'
+                                                    aria-hidden='true'></i>Academic Details</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 align-items-center">
+                                        <div class="col-lg-12 col-sm-12 col-md-12 d-inline">
+                                            <button type="button" class="btn rounded-pill btn-danger text-white px-4"
+                                                id="tab-3-btn1">Note</button>
+                                            <span class="m-0 ml-3">Please Add Details. - (Lower to
+                                                Higher)</span>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label">*Qualification</label>
+                                                <select class="form-select rounded-pill"
+                                                    aria-label="Default select example">
+                                                    <option selected>Select Your Qualification</option>
+                                                    <option value="1">Matric</option>
+                                                    <option value="2">Intermediate</option>
+                                                    <option value="3">Bachelors</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Institute</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-university application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label text-dark">*Total Marks</label>
+                                                <input type="text" class="form-control rounded-pill" id="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label text-dark">*Obtained
+                                                    Marks</label>
+                                                <input type="text" class="form-control rounded-pill" id="">
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <label for="" class="form-label text-dark">*Passing Year</label>
+                                                <input type="text" class="form-control rounded-pill" id="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 py-1">
+                                                <div class="input-group mb-3">
+                                                    <label for="" class="form-label text-dark">*Upload
+                                                        Transcript /
+                                                        Certificate</label>
+                                                    <div class="input-group mb-3">
+                                                        <label
+                                                            class="input-group-text btn-dark text-white rounded-pill px-5"
+                                                            for="inputGroupFile01" id="tab-3-btn4"><i
+                                                                class="fas fa-file-upload pe-2"></i>Upload</label>
+                                                        <input type="file" class="form-control d-none"
+                                                            id="inputGroupFile01">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <button type="button" class="btn rounded-pill btn-danger"
+                                                    id="tab-3-btn2"><i class='fas fa-plus-circle pe-2'
+                                                        aria-hidden='true'></i>Add
+                                                    More</button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row my-4">
+                                            <div class="col-lg-6 col-md-9 col-sm-12 py-1">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-danger text-white"
+                                                            id="tab-3-btn3">Save
+                                                            & Continue</button>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-light border">Back</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-3 col-sm-12 py-1">
+                                                <button type="button"
+                                                    class="btn rounded-pill btn-light border float-right">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab 3 content Ends here -->
+
+                        <!-- tab 4 content -->
+                        <div class="tab-pane fade" id="family-details" role="tabpanel"
+                            aria-labelledby="family-details-tab">
+                            <div class="container">
+                                <div class="row py-4">
+                                    <div class="col-lg-2 col-md-3 col-sm-12">
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <img src="images/Group 70.png" class="" alt="example placeholder" />
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <input class="form-control d-none" type="file" id="formFile">
+                                            <label for="formFile" class="form-label tab-4-image-text"><i
+                                                    class='fas fa-upload tab4-icon' aria-hidden='true'></i>CNIC
+                                                Front</label>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <img src="images/Group 82.png" class="" alt="example placeholder" />
+                                        </div>
+                                        <div class="d-flex justify-content-center mb-3">
+                                            <input class="form-control d-none" type="file" id="formFile">
+                                            <label for="formFile" class="form-label tab-4-image-text"><i
+                                                    class='fas fa-upload tab4-icon' aria-hidden='true'></i>CNIC
+                                                Back</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h2 class="fs-4"><i class='fas fa-users pe-2'
+                                                        aria-hidden='true'></i>Family Details</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row py-2">
+                                            <div class="col-12">
+                                                <span class="">Father/Guardian</span>
+                                                <hr class="mt-0">
+                                            </div>
+                                        </div>
+
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Full Name</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-user application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Email</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-envelope application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Mobile</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-mobile-alt application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Landline</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-phone application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Profession</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-user-tie application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Income</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-dollar-sign application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">CNIC</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-id-card application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Company</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-building application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row py-2">
+                                            <div class="col-12">
+                                                <span class="">Mother</span>
+                                                <hr class="mt-0">
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Full Name</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-user application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Email</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-envelope application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Mobile</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-mobile-alt application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Landline</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-phone application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Profession</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-user-tie application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Income</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-dollar-sign application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">CNIC</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-id-card application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">Company</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-building application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row py-2">
+                                            <div class="col-12">
+                                                <span class="">Sibling(s)</span>
+                                                <hr class="mt-0">
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Full Name</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-user application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Relation</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-user application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Mobile</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-mobile-alt application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*CNIC</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-id-card application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 position-relative py-1">
+                                                <label for="" class="form-label text-dark">*Institute</label>
+                                                <input type="text" class="form-control rounded-pill" id=""><i
+                                                    class='fas fa-university application-input-field-icon'
+                                                    aria-hidden='true'></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <button type="button" class="btn rounded-pill btn-danger"
+                                                    id="tab-3-btn2"><i class='fas fa-plus-circle pe-2'
+                                                        aria-hidden='true'></i>Add
+                                                    Sibling</button>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-lg-6 col-md-9 col-sm-12 py-1">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-danger text-white"
+                                                            id="tab-2-btn2">Save
+                                                            & Continue</button>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-6 d-grid py-1">
+                                                        <button type="button"
+                                                            class="btn rounded-pill btn-light border">Back</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-3 col-sm-12 py-1">
+                                                <button type="button"
+                                                    class="btn rounded-pill btn-light border float-right">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab 4 content Ends here -->
+                    </div>
+                    <!-- tabs content Ends here -->
+                </div>
+            </div>
+            <!-- Card Ends here -->
+        </div>
+    </div>
+
+    <div class="container d-md-flex flex-md-row">
+        <ul class="nav nav-tabs d-md-inline-flex align-self-md-start flex-md-column" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-expanded="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile">Profile</a>
+            </li>
+        </ul>
+        <div class="tab-content py-3 px-md-3 py-md-0" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                Lorem ipsum dolor sitamet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1 Ends here -->
+
+    <!-- External JavaScript -->
+    <script src="js/custom.js"></script>
+
+    <!-- Required scripts for Bootstrap 5 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
